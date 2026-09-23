@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Meme generator</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
+    <link rel="icon"
+          href="dogicon.png"/>
+   
+  </head>
+
+<body>
+    <div id="container">
+      <h1>
+        <img src="doge.png" width="100">
+        Meme generator
+      </h1>
+
+      <div id="panel">
+        
+        <label id="picture-button">
+          <input type="file" id="select-picture"/>
+          Seleziona un'immagine
+        </label>
+
+        <h3>Testo superiore</h3>
+        <input type="text" id="text-top" class="textbox" />
+
+        <h3>Testo inferiore</h3>
+        <input type="text" id="text-bottom" class="textbox" />
+
+      </div>
+
+      <canvas id="meme"></canvas>
+
+    </div>
+  </body>
+  
+</html>

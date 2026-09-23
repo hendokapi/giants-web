@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lato&display=swap");
+
+* {
+  box-sizing: border-box; /*aggiungiamo una proprietà che consente di includere padding e bordo nella larghezza o altezza effettiva dell'elemento - sarà più facile ottenere l'effetto desiderato: se vuoi che l'elemento sia 1000px, inserisci semplicemente quel valore in width senza preoccuparti di padding e bordo - questi valori saranno inclusi*/
+}
+
+body {
+  background: #00b4db; /* fallback per i browser più vecchi */
+  background: -webkit-linear-gradient(
+	bottom,
+	#0083b0,
+	#00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+	to bottom,
+	#0083b0,
+	#00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+}
+
+#panel{
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+  }
+ 
+  .textbox {
+    width: 100%;
+    padding:10px;
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    margin-bottom: 20px;
+  }
+  canvas {
+    width: 100%;
+  }
+  
+  #select-picture {
+  display: none;
+}
+
+#picture-button
+ {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background-color: #f5af19;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+#picture-button:hover
+ {
+  cursor: pointer;
+  opacity: 0.8;
+}
